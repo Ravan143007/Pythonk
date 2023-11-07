@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating Elements</title>
+
+    <style>
+      body {
+        background-color: #0e454c;
+        padding: 30px;
+      }
+      h1 {
+        color: #14fff7;
+        font-size: 72px;
+        font-family: sans-serif;
+        text-decoration: underline;
+      }
+      p {
+        color: #14fff7;
+        font-family: sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Am I real?</h1>
+    <script>
+      // Create a new h1 element
+let h1 = document.createElement('h1');
+// Set the text content
+h1.textContent = 'JavaScript seems easy';
+
+// Create a new p element
+let p = document.createElement('p');
+// Set the text content
+p.textContent = 'or maybe I am just very good at programming in any language';
+
+// Append the h1 and p elements to the body
+document.body.appendChild(h1);
+document.body.appendChild(p);
+
+    </script>
+  </body>
+</html>
